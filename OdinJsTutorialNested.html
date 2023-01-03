@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Odin Project Javascript Tutorials</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container col-lg-4 col-md-6">
+		<h1 class="text-center mt-5 mb-4">Weather Today</h1>
+
+		<div class="card">
+			<div class="card-header">
+				<h4>Daily Weather Alert</h4>
+			</div>
+			<div class="card-body">
+				<div class="form-group control-group">
+					<label for="weather" class="mb-4"><h5>Select the weather type today!</h5></label>
+					<select id="weather" class="form-control">
+						<option value="">---Choose Weather---</option>
+						<option value="sunny">Sunny</option>
+						<option value="rainy">Rainy</option>
+						<option value="snowing">Snowing</option>
+						<option value="overcast">Overcast</option>
+					</select>
+				</div>
+
+				<p class="mt-4"></p>
+			</div>
+			<div class="card-footer">
+				<a href="#">Bootstrap 5 Design Template</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		const select = document.querySelector('select');
+		const para = document.querySelector('p');
+
+		select.addEventListener('change', setWeather);
+
+		function setWeather () {
+			const choice = select.value;
+
+			if (choice === 'sunny') {
+				para.textContent = `The Weather is nice and ${choice} outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.`;
+
+			} else if (choice === 'rainy') {
+				para.textContent = `The Weather is ${choice} outside; take a rain coat and an umbrella, and do not stay out for too long.`;
+
+			} else if (choice === 'snowing') {
+				para.textContent = `The Weather is ${choice} outside; tit is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.`;
+				
+			} else if (choice === 'overcast') {
+				para.textContent = `The Weather is ${choice} outside. It is not raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.`
+				
+			} else {
+				para.textContent = '';
+
+			}
+		}
+	</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

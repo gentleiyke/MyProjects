@@ -1,0 +1,97 @@
+* {
+	border: 2px solid red;
+	background-color: #1f2937;
+	margin: 0 40px;
+}
+.container {
+	margin: 0 40px;
+}
+nav ul {
+	display: flex;
+
+}
+
+nav li {
+	flex: auto;
+	list-style: none;
+	
+}
+
+.logo {
+	font-family: roboto;
+	font-size: 24px;
+	font-weight: bolder;
+	color: #f9faf8;
+	width: 40%;
+}
+
+.link-text {
+	color: #e5e7eb;
+	font-size: 18px;
+	font-family: roboto;
+}
+.placeholder {
+	display: flex;
+	margin: 0 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+.hero-main h3 {
+	font-family: roboto;
+	font-size: 48px;
+	font-weight: bolder;
+	color: #f9faf8;
+}
+.hero-main button {
+	color: #fff;
+	background-color: #3882f6;
+	border-radius: 2px;
+}
+.hero-image, .hero-main p {
+	color: #e5e7eb;
+	font-size: 18px;
+	font-family: roboto;
+}
+.hero-main, .hero-image {
+	flex: 1;
+}
+
+.block {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 40px;
+}
+.block-box {
+	border: 2px solid blue;
+	border-radius: 10px;
+	height: 100px;
+	flex: 1;
+}
+.random h3 {
+	font-family: roboto;
+	font-size: 36px;
+	font-weight: bolder;
+	color: #1f2937;
+	text-align: center;
+	background-color: #fff;
+}
+.random {
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
